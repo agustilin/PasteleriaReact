@@ -3,7 +3,6 @@ import { HiMinus, HiPlus, HiShoppingCart } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import type { Producto } from "../../data/productos";
 import { useCart } from "../../context/CartContext";
-import { FEATURE_MESSAGES } from "../../constants/messages";
 
 interface ProductActionsProps {
     producto: Producto;
@@ -31,6 +30,7 @@ export const ProductActions = ({ producto }: ProductActionsProps) => {
 
     return (
         <div className="space-y-6 border-t border-slate-200 pt-6">
+            
             {/* Selector de cantidad */}
             <div className="space-y-3">
                 <label className="block font-semibold text-sm text-gray-700">
@@ -78,26 +78,10 @@ export const ProductActions = ({ producto }: ProductActionsProps) => {
 
                 <Link
                     to="/cart"
-                    className="sm:w-auto px-6 py-4 border-2 border-slate-300 rounded-lg font-medium hover:bg-gray-50 transition-colors text-center"
+                    className="sm:w-auto px-6 py-4 border-2 border-rose-500 rounded-lg font-medium hover:bg-rose-600 transition-colors text-center"
                 >
                     Ver carrito
                 </Link>
-            </div>
-
-            {/* Información adicional */}
-            <div className="bg-gray-50 p-4 rounded-lg space-y-2 text-sm">
-                <p className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span>{FEATURE_MESSAGES.FREE_SHIPPING_ALL}</span>
-                </p>
-                <p className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span>Productos frescos y de calidad</span>
-                </p>
-                <p className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span>Entrega en 24-48 horas</span>
-                </p>
             </div>
         </div>
     );

@@ -1,7 +1,6 @@
 import { CardProduct } from "../productos/CardProduct";
 import type { Producto } from "../../data/productos";
 
-/* Props: title and array of productos */
 interface Props {
     title: string;
     productos: Producto[];
@@ -9,8 +8,8 @@ interface Props {
 
 export const ProductosGrid = ({ title, productos }: Props) => {
         return (
-            <div className="my-32">
-                <div className="container mx-auto px-4">
+            <div className="my-20">
+                <div className="bg-rose-200 container mx-auto px-4 pt-10 pb-10 rounded-2xl">
                     <h2 className="text-3xl font-semibold text-center mb-8 md:text-4xl lg:text-5xl">
                         {title}
                     </h2>

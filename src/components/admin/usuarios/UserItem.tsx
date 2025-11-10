@@ -16,7 +16,7 @@ export const UserItem = ({ usuario, onEdit, onDelete }: UserItemProps) => {
     };
 
     return (
-        <div className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+        <div className="bg-rose-200 border border-gray-400 rounded-lg p-4 hover:shadow-lg transition-shadow">
             <div className="flex justify-between items-start mb-3">
                 <div className="flex-1">
                     <h3 className="font-semibold text-lg">{usuario.nombre}</h3>

@@ -4,7 +4,7 @@ import { FilterSection } from "../filters/FilterSection"
 import { useFilters } from "../../context/FilterContext"
 
 const formasDisponibles = ['Circulares', 'Cuadrada'];
-const tamaniosDisponibles = ['Grande', 'Pequenia'];
+const tamaniosDisponibles = ['Grande', 'Pequeña'];
 
 export const ContainerFilter = () => {
     const { filters, toggleForma, toggleTamanio, clearFilters } = useFilters();
@@ -12,7 +12,7 @@ export const ContainerFilter = () => {
     const hasActiveFilters = filters.formas.length > 0 || filters.tamanios.length > 0;
 
     return (
-        <div className="p-5 border border-slate-200 rounded-lg h-fit col-span-2 lg:col-span-1">
+        <div className="bg-rose-200 p-5 border border-slate-200 rounded-lg h-fit col-span-2 lg:col-span-1">
             <div className="flex items-center justify-between mb-4">
                 <h3 className="font-semibold text-xl">
                     Filtros
@@ -30,7 +30,6 @@ export const ContainerFilter = () => {
             <Separator />
 
             <div className="space-y-6">
-                {/* Filtro por Forma */}
                 <FilterSection title="Forma">
                     {formasDisponibles.map(forma => (
                         <FilterCheckbox
@@ -43,8 +42,6 @@ export const ContainerFilter = () => {
                 </FilterSection>
 
                 <Separator />
-
-                {/* Filtro por Tamaño */}
                 <FilterSection title="Tamaño">
                     {tamaniosDisponibles.map(tamanio => (
                         <FilterCheckbox

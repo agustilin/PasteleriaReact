@@ -12,7 +12,7 @@ export const CartPage = () => {
 
     return (
         <div className="py-8 px-4">
-            <h1 className="text-4xl font-bold mb-8">Tu Carrito</h1>
+            <h1 className="text-center text-4xl font-bold mb-8">Tu Carrito</h1>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div className="lg:col-span-2 space-y-4">

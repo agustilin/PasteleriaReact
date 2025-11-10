@@ -23,14 +23,16 @@ export const InputField = ({
     required = true,
     minLength
 }: InputFieldProps) => {
+    const inputId = `input-${name}`;
     return (
         <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor={inputId} className="block text-sm font-medium text-gray-700 mb-2">
                 {label}
             </label>
             <div className="relative">
                 <Icon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                 <input
+                    id={inputId}
                     type={type}
                     name={name}
                     value={value}

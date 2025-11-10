@@ -23,7 +23,7 @@ export const ProductDetailPage = () => {
     }
 
     return (
-        <div className="py-8 px-4">
+        <div className=" py-8 px-4">
             <Link 
                 to="/pasteles"
                 className="inline-flex items-center gap-2 text-gray-600 hover:text-black mb-6 transition-colors"
@@ -33,12 +33,13 @@ export const ProductDetailPage = () => {
             </Link>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
-                <ProductImage 
-                    imagen={producto.imagen} 
-                    titulo={producto.titulo} 
-                />
+                <div className="bg-rose-200 p-6 rounded-2xl">
+                    <ProductImage 
+                        imagen={producto.imagen} 
+                    />
+                </div>
 
-                <div className="space-y-6">
+                <div className="bg-rose-200 p-6 rounded-2xl">
                     <ProductInfo producto={producto} />
                     <ProductActions producto={producto} />
                 </div>

@@ -22,7 +22,7 @@ export const CartSummary = ({ cart, onApplyPromoCode, onRemovePromoCode }: CartS
     const navigate = useNavigate();
     const [isProcessing, setIsProcessing] = useState(false);
     
-    const envio = 0; // Envío gratis por ahora
+    const envio = 0; // Envío gratis 
 
     // Calcular descuento de usuario
     const userDiscount = user && user.descuentoPorcentaje > 0 
@@ -66,7 +66,7 @@ export const CartSummary = ({ cart, onApplyPromoCode, onRemovePromoCode }: CartS
             setIsProcessing(false);
 
             // Mostrar mensaje de éxito
-            alert("¡Compra realizada exitosamente! 🎉\n\nPuedes ver tu pedido en tu perfil.");
+            alert("¡Compra realizada exitosamente! \n\nPuedes ver tu pedido en tu perfil.");
 
             // Redirigir a la página de cuenta
             navigate("/account");

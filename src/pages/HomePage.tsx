@@ -1,3 +1,4 @@
+import { Categoria } from "../components/home/Categorias"
 import { Destacadas } from "../components/home/Destacado"
 import { ProductosGrid } from "../components/home/ProductosGrid"
 
@@ -13,7 +14,7 @@ export const HomePage = () => {
         <ProductosGrid
             title="Productos destacados" productos={productosDestacados}
         />
-
+        <Categoria/>
     </div>
     )
 }

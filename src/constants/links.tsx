@@ -1,4 +1,4 @@
-import { FaFacebookSquare } from 'react-icons/fa';
+import { FaFacebookSquare, FaGithub } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa6';
 
 export const navbarLinks = [
@@ -33,6 +33,12 @@ export const socialLinks = [
         title:'Instagram',
         href:'/',
         icon:<FaInstagram/>
+    },
+    {
+        id:3,
+        nombre:'GitHub',
+        href:'https://github.com/',
+        icon:<FaGithub/>
     },
 ]
 

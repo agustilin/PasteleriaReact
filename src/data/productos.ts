@@ -67,7 +67,7 @@ export const productos: Producto[] = [
         titulo: "Mini Torta Chocolate",
         imagen: "/img/circulares/tortacircularpeque1.jpeg",
         forma: "Circulares",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 5000,
         descripcion: "Pequeña torta de chocolate ideal para ocasiones íntimas",
         stock: 20
@@ -77,7 +77,7 @@ export const productos: Producto[] = [
         titulo: "Mini Torta Vainilla",
         imagen: "/img/circulares/tortacircularpeque3.webp",
         forma: "Circulares",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 3490,
         descripcion: "Delicada mini torta de vainilla con decoración sencilla",
         stock: 25
@@ -87,7 +87,7 @@ export const productos: Producto[] = [
         titulo: "Mini Torta Fresa",
         imagen: "/img/circulares/tortacircularpeque5.webp",
         forma: "Circulares",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 4990,
         descripcion: "Mini torta con sabor a fresa y cobertura rosada",
         stock: 18
@@ -147,7 +147,7 @@ export const productos: Producto[] = [
         titulo: "Mini Torta Cuadrada Chocolate",
         imagen: "/img/cuadradas/tortacuadradapeque1.jpg",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 4990,
         descripcion: "Pequeña torta cuadrada de chocolate para ocasiones especiales",
         stock: 15
@@ -157,7 +157,7 @@ export const productos: Producto[] = [
         titulo: "Mini Torta Cuadrada Vainilla",
         imagen: "/img/cuadradas/tortacuadradapeque2.jpg",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 4490,
         descripcion: "Mini torta cuadrada de vainilla con decoración elegante",
         stock: 20
@@ -167,7 +167,7 @@ export const productos: Producto[] = [
         titulo: "Mini Torta Cuadrada Fresa",
         imagen: "/img/cuadradas/tortacuadradapeque3.webp",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 4990,
         descripcion: "Deliciosa mini torta cuadrada con sabor a fresa",
         stock: 18
@@ -177,7 +177,7 @@ export const productos: Producto[] = [
         titulo: "Mini Torta Cuadrada Caramelo",
         imagen: "/img/cuadradas/tortacuadradapeque4.jpg",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 5490,
         descripcion: "Mini torta cuadrada con irresistible sabor a caramelo",
         stock: 12
@@ -187,7 +187,7 @@ export const productos: Producto[] = [
         titulo: "Mini Torta Cuadrada Especial",
         imagen: "/img/cuadradas/tortacuadradapeque5.jpg",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 5990,
         descripcion: "Mini torta cuadrada con decoración especial para eventos",
         stock: 10
@@ -197,7 +197,7 @@ export const productos: Producto[] = [
         titulo: "Mini Torta Cuadrada Premium",
         imagen: "/img/cuadradas/tortacuadradapeque6.png",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 6990,
         descripcion: "Mini torta cuadrada premium con ingredientes de alta calidad",
         stock: 8
@@ -212,7 +212,7 @@ export const pastelesRecientes = [
         titulo: "Mini Torta Cuadrada Fresa",
         imagen: "/img/cuadradas/tortacuadradapeque3.webp",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 4990,
         descripcion: "Deliciosa mini torta cuadrada con sabor a fresa",
         stock: 18
@@ -222,7 +222,7 @@ export const pastelesRecientes = [
         titulo: "Mini Torta Cuadrada Caramelo",
         imagen: "/img/cuadradas/tortacuadradapeque4.jpg",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 5490,
         descripcion: "Mini torta cuadrada con irresistible sabor a caramelo",
         stock: 12
@@ -232,7 +232,7 @@ export const pastelesRecientes = [
         titulo: "Mini Torta Cuadrada Especial",
         imagen: "/img/cuadradas/tortacuadradapeque5.jpg",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 5990,
         descripcion: "Mini torta cuadrada con decoración especial para eventos",
         stock: 10
@@ -242,7 +242,7 @@ export const pastelesRecientes = [
         titulo: "Mini Torta Cuadrada Premium",
         imagen: "/img/cuadradas/tortacuadradapeque6.png",
         forma: "Cuadrada",
-        tamanio: "Pequenia",
+        tamanio: "Pequeña",
         precio: 6990,
         descripcion: "Mini torta cuadrada premium con ingredientes de alta calidad",
         stock: 8

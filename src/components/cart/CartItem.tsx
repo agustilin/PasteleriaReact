@@ -10,7 +10,7 @@ interface CartItemProps {
 
 export const CartItem = ({ item, updateQuantity, removeFromCart }: CartItemProps) => {
     return (
-        <div className="flex gap-4 bg-white p-4 rounded-lg shadow border border-slate-200">
+        <div className="bg-rose-200 flex gap-4 p-4 rounded-lg shadow border border-slate-200">
             <img 
                 src={item.imagen} 
                 alt={item.titulo} 

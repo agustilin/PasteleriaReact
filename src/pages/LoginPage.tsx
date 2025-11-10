@@ -4,7 +4,7 @@ import { LoginForm } from "../components/auth/LoginForm";
 
 export const LoginPage = () => {
     return (
-        <div className="py-8 px-4">
+        <div className="bg-rose-200 mx-110 p-4 rounded-3xl">
             <div className="max-w-md mx-auto">
                 <LoginHeader />
                 <LoginForm />

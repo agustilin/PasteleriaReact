@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { HiMail, HiLockClosed, HiUser, HiPhone, HiCalendar, HiLocationMarker, HiTag } from "react-icons/hi";
 import { InputField } from "./InputField";
-import { TermsCheckbox } from "./TermsCheckbox";
 import { useUser } from "../../context/UserContext";
 import { calcularEdad, esDuocEmail, type Usuario } from "../../data/Usuario";
 import { AUTH_MESSAGES } from "../../constants/messages";
@@ -253,7 +252,6 @@ export const RegistroForm = () => {
                     minLength={6}
                 />
 
-                <TermsCheckbox />
 
                 <button
                     type="submit"

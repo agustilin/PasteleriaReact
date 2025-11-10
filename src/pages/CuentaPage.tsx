@@ -4,7 +4,6 @@ import { usePedidos } from "../context/PedidosContext";
 import { RestrictedAccess } from "../components/account/RestrictedAccess";
 import { UserProfile } from "../components/account/UserProfile";
 import { OrdersList } from "../components/account/OrdersList";
-import { QuickAccessCards } from "../components/account/QuickAccessCards";
 
 export const CuentaPage = () => {
     const { user, logout, isAuthenticated } = useUser();
@@ -24,12 +23,11 @@ export const CuentaPage = () => {
 
     return (
         <div className="py-8 px-4">
-            <h1 className="text-4xl font-bold mb-8">Mi Cuenta</h1>
+            <h1 className="bg-rose-200 p-4 rounded-4xl text-center text-4xl font-bold mb-8">Mi Cuenta</h1>
 
             <div className="max-w-6xl mx-auto">
                 <UserProfile user={user} onLogout={handleLogout} />
                 <OrdersList pedidos={pedidosUsuario} />
-                <QuickAccessCards />
             </div>
         </div>
     );

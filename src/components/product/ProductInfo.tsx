@@ -10,7 +10,7 @@ export const ProductInfo = ({ producto }: ProductInfoProps) => {
         <div className="space-y-6">
             <div>
                 <h1 className="text-3xl md:text-4xl font-bold mb-3">{producto.titulo}</h1>
-                <p className="text-3xl font-semibold text-rose-600">
+                <p className="text-3xl font-semibold text-rose-500">
                     {formatPrice(producto.precio)}
                 </p>
             </div>
@@ -39,7 +39,7 @@ export const ProductInfo = ({ producto }: ProductInfoProps) => {
                             {producto.stock} en stock
                         </span>
                     ) : (
-                        <span className="text-red-600 font-medium">Agotado</span>
+                        <span className="text-rose-500 font-medium">Agotado</span>
                     )}
                 </div>
             )}

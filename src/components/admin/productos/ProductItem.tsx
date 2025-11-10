@@ -17,7 +17,7 @@ export const ProductItem = ({ producto, onEdit, onDelete }: ProductItemProps) =>
     };
 
     return (
-        <div className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+        <div className="bg-rose-200 border border-gray-400 rounded-lg p-4 hover:shadow-lg transition-shadow">
             <div className="flex gap-4">
                 {/* Imagen del producto */}
                 <div className="w-24 h-24 shrink-0">
