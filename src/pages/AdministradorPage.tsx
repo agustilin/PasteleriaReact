@@ -3,9 +3,10 @@ import { AdminProvider } from '../context/AdminContext';
 import { DashboardNav } from '../components/admin/DashboardNav';
 import { ProductList } from '../components/admin/productos/ProductList';
 import { UserList } from '../components/admin/usuarios/UserList';
+import UsuariosConCompras from '../components/admin/usuarios/UsuariosConCompras';
 
 export const AdministradorPage = () => {
-    const [activeTab, setActiveTab] = useState<'productos' | 'usuarios'>('productos');
+    const [activeTab, setActiveTab] = useState<'productos' | 'usuarios' | 'UsuaiosConCompras'>('productos');
 
     return (
         <AdminProvider>
@@ -28,9 +29,11 @@ export const AdministradorPage = () => {
                     <div className="bg-white rounded-lg shadow-sm p-6">
                         {activeTab === 'productos' ? (
                             <ProductList />
-                        ) : (
+                        ) : activeTab === 'usuarios' ? (
                             <UserList />
-                        )}
+                        ) : activeTab === 'UsuaiosConCompras' ? (
+                            <UsuariosConCompras />
+                        ) : null}
                     </div>
                 </div>
             </div>

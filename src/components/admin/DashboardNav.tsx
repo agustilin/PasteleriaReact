@@ -1,6 +1,6 @@
 interface DashboardNavProps {
-    activeTab: 'productos' | 'usuarios';
-    onTabChange: (tab: 'productos' | 'usuarios') => void;
+    activeTab: 'productos' | 'usuarios' | 'UsuaiosConCompras';
+    onTabChange: (tab: 'productos' | 'usuarios' | 'UsuaiosConCompras') => void;
 }
 
 export const DashboardNav = ({ activeTab, onTabChange }: DashboardNavProps) => {
@@ -26,6 +26,16 @@ export const DashboardNav = ({ activeTab, onTabChange }: DashboardNavProps) => {
                     }`}
                 >
                     Gestión de Usuarios
+                </button>
+
+                <button
+                    onClick={() => onTabChange('UsuaiosConCompras')}
+                    className={`px-6 py-3 font-medium transition-colors border-b-2 ${
+                    activeTab === 'UsuaiosConCompras'
+                        ? 'border-rose-500 text-rose-600'
+                        : 'border-transparent text-gray-500 hover:text-gray-700'
+                }`}>
+                    Productos por Usuario
                 </button>
             </nav>
         </div>

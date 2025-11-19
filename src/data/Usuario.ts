@@ -40,5 +40,5 @@ export const esCumpleanosHoy = (fechaNacimiento: string): boolean => {
   const nacimiento = new Date(fechaNacimiento);
   
   return hoy.getMonth() === nacimiento.getMonth() && 
-         hoy.getDate() === nacimiento.getDate();
+          hoy.getDate() === nacimiento.getDate();
 };
