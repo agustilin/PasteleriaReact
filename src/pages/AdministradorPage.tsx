@@ -1,11 +1,24 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { AdminProvider } from '../context/AdminContext';
 import { DashboardNav } from '../components/admin/DashboardNav';
 import { ProductList } from '../components/admin/productos/ProductList';
 import { UserList } from '../components/admin/usuarios/UserList';
 import UsuariosConCompras from '../components/admin/usuarios/UsuariosConCompras';
+import { UserContext } from '../context/UserContext';
+import { RestrictedAccess } from '../components/account/RestrictedAccess';
+import { esAdmin } from '../data/Usuario';
 
 export const AdministradorPage = () => {
+    const userContext = useContext(UserContext);
+    const user = userContext?.user;
+
+    // Verificar si el usuario tiene un correo autorizado
+    const isAdmin = esAdmin(user?.email || '');
+
+    if (!isAdmin) {
+        return <RestrictedAccess/>;
+    }
+
     const [activeTab, setActiveTab] = useState<'productos' | 'usuarios' | 'UsuaiosConCompras'>('productos');
 
     return (

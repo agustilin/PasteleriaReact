@@ -6,6 +6,7 @@ import { RememberMeCheckbox } from "./RememberMeCheckbox";
 import { ForgotPasswordLink } from "./ForgotPasswordLink";
 import { useUser } from "../../context/UserContext";
 import { AUTH_MESSAGES } from "../../constants/messages";
+import { esAdmin } from "../../data/Usuario";
 
 interface LoginFormData {
     email: string;
@@ -50,7 +51,12 @@ export const LoginForm = () => {
                 login(usuarioEncontrado);
                 alert("¡Sesión iniciada exitosamente!");
                 navigate("/account");
-            } else {
+            }
+            if(esAdmin(formData.email)){
+                alert("¡Bienvenido Administrador!");
+                navigate("/admin");
+            }
+            else {
                 alert(AUTH_MESSAGES.EMAIL_NOT_REGISTERED);
                 navigate("/registro");
             }

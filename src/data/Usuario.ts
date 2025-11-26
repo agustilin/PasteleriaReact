@@ -34,6 +34,11 @@ export const esDuocEmail = (email: string): boolean => {
   return emailLower.endsWith('@duoc.cl') || emailLower.endsWith('@duocuc.cl');
 };
 
+export const esAdmin = (email: string): boolean => {
+  const emailLower = email.toLowerCase();
+  return emailLower.endsWith('@admin.cl') || emailLower.endsWith('@admin.com');
+};
+
 // Función helper para verificar si es cumpleaños hoy
 export const esCumpleanosHoy = (fechaNacimiento: string): boolean => {
   const hoy = new Date();

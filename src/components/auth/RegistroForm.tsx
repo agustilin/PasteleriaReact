@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { HiMail, HiLockClosed, HiUser, HiPhone, HiCalendar, HiLocationMarker, HiTag } from "react-icons/hi";
 import { InputField } from "./InputField";
 import { useUser } from "../../context/UserContext";
-import { calcularEdad, esDuocEmail, type Usuario } from "../../data/Usuario";
+import { calcularEdad, esAdmin, esDuocEmail, type Usuario } from "../../data/Usuario";
 import { AUTH_MESSAGES } from "../../constants/messages";
 
 interface RegistroFormData {
@@ -43,8 +43,12 @@ export const RegistroForm = () => {
         // Mostrar información de promociones aplicables
         if (name === 'email') {
             if (esDuocEmail(value)) {
-                setPromoInfo("🎂 ¡Correo Duoc UC detectado! Recibirás una torta gratis en tu cumpleaños.");
-            } else {
+                setPromoInfo(" ¡Correo Duoc UC detectado! Recibirás una torta gratis en tu cumpleaños.");
+            } 
+            if (esAdmin(value)) {
+                setPromoInfo(" ¡Correo de administrador detectado!.");
+            }
+            else {
                 setPromoInfo("");
             }
         }
